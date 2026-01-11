@@ -1,1 +1,185 @@
+[
+  {
+    "date": "2026-02-07",
+    "title": "Go Kart Rennen",
+    "type": "event",
+    "description": "Go Kart Rennen MOTOBRAT MC",
+    "location": "Neckartal 202, 78628 Rottweil"
+  },
+  {
+    "date": "2026-02-21",
+    "title": "Kvartirnik mit RED MAGMA",
+    "type": "event",
+    "description": "Kvartirnik mit RED MAGMA",
+    "location": "Clubhaus MOTOBRAT MC"
+  },
+  {
+    "date": "2026-04-18",
+    "title": "Saisoneröffnungsparty",
+    "type": "event",
+    "description": "Saisoneröffnungsparty MOTOBRAT MC",
+    "location": "Carl-Benz-Str. 4, 78579 Neuhausen ob Eck"
+  },
+  {
+    "date": "2026-09-10",
+    "date_end": "2026-09-13",
+    "title": "Alpentour",
+    "type": "tour",
+    "description": "Mehrtagestour durch die Alpen",
+    "location": "Alpen"
+  },
+  {
+    "date": "2026-10-17",
+    "title": "Saisonabschlussparty",
+    "type": "event",
+    "description": "Saisonabschlussparty MOTOBRAT MC",
+    "location": "Carl-Benz-Str. 4, 78579 Neuhausen ob Eck"
+  },
+
+  {
+    "date": "2026-03-01",
+    "title": "Schaschlik",
+    "type": "recurring",
+    "description": "Jeden ersten Sonntag des Monats – Schaschlik bei MOTOBRAT MC ab 12:00",
+    "location": "Carl-Benz-Str. 4, 78579 Neuhausen ob Eck",
+    "image": "images/schaschlik.jpg"
+  },
+  {
+    "date": "2026-04-05",
+    "title": "Schaschlik",
+    "type": "recurring",
+    "description": "Jeden ersten Sonntag des Monats – Schaschlik bei MOTOBRAT MC ab 12:00",
+    "location": "Carl-Benz-Str. 4, 78579 Neuhausen ob Eck",
+    "image": "images/schaschlik.jpg"
+  },
+  {
+    "date": "2026-05-03",
+    "title": "Schaschlik",
+    "type": "recurring",
+    "description": "Jeden ersten Sonntag des Monats – Schaschlik bei MOTOBRAT MC ab 12:00",
+    "location": "Carl-Benz-Str. 4, 78579 Neuhausen ob Eck",
+    "image": "images/schaschlik.jpg"
+  },
+  {
+    "date": "2026-06-07",
+    "title": "Schaschlik",
+    "type": "recurring",
+    "description": "Jeden ersten Sonntag des Monats – Schaschlik bei MOTOBRAT MC ab 12:00",
+    "location": "Carl-Benz-Str. 4, 78579 Neuhausen ob Eck",
+    "image": "images/schaschlik.jpg"
+  },
+  {
+    "date": "2026-07-05",
+    "title": "Schaschlik",
+    "type": "recurring",
+    "description": "Jeden ersten Sonntag des Monats – Schaschlik bei MOTOBRAT MC ab 12:00",
+    "location": "Carl-Benz-Str. 4, 78579 Neuhausen ob Eck",
+    "image": "images/schaschlik.jpg"
+  },
+  {
+    "date": "2026-08-02",
+    "title": "Schaschlik",
+    "type": "recurring",
+    "description": "Jeden ersten Sonntag des Monats – Schaschlik bei MOTOBRAT MC ab 12:00",
+    "location": "Carl-Benz-Str. 4, 78579 Neuhausen ob Eck",
+    "image": "images/schaschlik.jpg"
+  },
+  {
+    "date": "2026-09-06",
+    "title": "Schaschlik",
+    "type": "recurring",
+    "description": "Jeden ersten Sonntag des Monats – Schaschlik bei MOTOBRAT MC ab 12:00",
+    "location": "Carl-Benz-Str. 4, 78579 Neuhausen ob Eck",
+    "image": "images/schaschlik.jpg"
+  },
+  {
+    "date": "2026-10-04",
+    "title": "Schaschlik",
+    "type": "recurring",
+    "description": "Jeden ersten Sonntag des Monats – Schaschlik bei MOTOBRAT MC ab 12:00",
+    "location": "Carl-Benz-Str. 4, 78579 Neuhausen ob Eck",
+    "image": "images/schaschlik.jpg"
+  },
+  {
+    "date": "2026-11-01",
+    "title": "Schaschlik",
+    "type": "recurring",
+    "description": "Jeden ersten Sonntag des Monats – Schaschlik bei MOTOBRAT MC ab 12:00",
+    "location": "Carl-Benz-Str. 4, 78579 Neuhausen ob Eck",
+    "image": "images/schaschlik.jpg"
+  },
+  {
+    "date": "2026-12-06",
+    "title": "Schaschlik",
+    "type": "recurring",
+    "description": "Jeden ersten Sonntag des Monats – Schaschlik bei MOTOBRAT MC ab 12:00",
+    "location": "Carl-Benz-Str. 4, 78579 Neuhausen ob Eck",
+    "image": "images/schaschlik.jpg"
+  },
+
+  {
+    "date": "2026-03-21",
+    "title": "Cluboffener Abend",
+    "type": "recurring",
+    "description": "Jeden dritten Samstag des Monats – Cluboffener Abend ab 19:00",
+    "location": "Carl-Benz-Str. 4, 78579 Neuhausen ob Eck",
+    "image": "images/clubabend.jpg"
+  },
+  {
+    "date": "2026-05-16",
+    "title": "Cluboffener Abend",
+    "type": "recurring",
+    "description": "Jeden dritten Samstag des Monats – Cluboffener Abend ab 19:00",
+    "location": "Carl-Benz-Str. 4, 78579 Neuhausen ob Eck",
+    "image": "images/clubabend.jpg"
+  },
+  {
+    "date": "2026-06-20",
+    "title": "Cluboffener Abend",
+    "type": "recurring",
+    "description": "Jeden dritten Samstag des Monats – Cluboffener Abend ab 19:00",
+    "location": "Carl-Benz-Str. 4, 78579 Neuhausen ob Eck",
+    "image": "images/clubabend.jpg"
+  },
+  {
+    "date": "2026-07-18",
+    "title": "Cluboffener Abend",
+    "type": "recurring",
+    "description": "Jeden dritten Samstag des Monats – Cluboffener Abend ab 19:00",
+    "location": "Carl-Benz-Str. 4, 78579 Neuhausen ob Eck",
+    "image": "images/clubabend.jpg"
+  },
+  {
+    "date": "2026-08-15",
+    "title": "Cluboffener Abend",
+    "type": "recurring",
+    "description": "Jeden dritten Samstag des Monats – Cluboffener Abend ab 19:00",
+    "location": "Carl-Benz-Str. 4, 78579 Neuhausen ob Eck",
+    "image": "images/clubabend.jpg"
+  },
+  {
+    "date": "2026-09-19",
+    "title": "Cluboffener Abend",
+    "type": "recurring",
+    "description": "Jeden dritten Samstag des Monats – Cluboffener Abend ab 19:00",
+    "location": "Carl-Benz-Str. 4, 78579 Neuhausen ob Eck",
+    "image": "images/clubabend.jpg"
+  },
+  {
+    "date": "2026-11-21",
+    "title": "Cluboffener Abend",
+    "type": "recurring",
+    "description": "Jeden dritten Samstag des Monats – Cluboffener Abend ab 19:00",
+    "location": "Carl-Benz-Str. 4, 78579 Neuhausen ob Eck",
+    "image": "images/clubabend.jpg"
+  },
+  {
+    "date": "2026-12-19",
+    "title": "Cluboffener Abend",
+    "type": "recurring",
+    "description": "Jeden dritten Samstag des Monats – Cluboffener Abend ab 19:00",
+    "location": "Carl-Benz-Str. 4, 78579 Neuhausen ob Eck",
+    "image": "images/clubabend.jpg"
+  }
+]
 
