@@ -1,11 +1,7 @@
 import os
 import json
 from datetime import datetime, timedelta, date
-from telegram import Bot, InputFile
-
-# =========================
-# KONFIGURATION
-# =========================
+from telegram import Bot
 
 BOT_TOKEN = os.getenv("BOT_TOKEN")
 CHANNEL_USERNAME = "@motobrat_news"
@@ -15,33 +11,28 @@ REMINDER_DAYS = 5
 if not BOT_TOKEN:
     raise RuntimeError("BOT_TOKEN ist nicht gesetzt")
 
-# =========================
-# HILFSFUNKTIONEN
-# =========================
 
 def load_events():
     with open(EVENTS_FILE, "r", encoding="utf-8") as f:
         return json.load(f)
 
 
-def is_reminder_day(event_date: date) -> bool:
+def parse_date(value):
+    return datetime.strptime(value, "%Y-%m-%d").date()
+
+
+def is_reminder_day(event_date):
     return event_date - timedelta(days=REMINDER_DAYS) == date.today()
 
 
-def send_event(bot: Bot, event: dict):
-    title = event["title"]
-    start_date = event["start_date"]
-    end_date = event.get("end_date")
+def send_event(bot, event, event_date):
+    title = event.get("title", "Event")
     description = event.get("description", "")
     image = event.get("image")
 
-    date_text = start_date
-    if end_date:
-        date_text += f" – {end_date}"
-
     caption = (
         f"📅 *{title}*\n"
-        f"🗓 *{date_text}*\n\n"
+        f"🗓 *{event_date.strftime('%d.%m.%Y')}*\n\n"
         f"{description}"
     )
 
@@ -61,21 +52,43 @@ def send_event(bot: Bot, event: dict):
         )
 
 
-# =========================
-# MAIN
-# =========================
-
 def main():
     bot = Bot(token=BOT_TOKEN)
     events = load_events()
-
     today = date.today()
 
     for event in events:
-        start = datetime.strptime(event["start_date"], "%Y-%m-%d").date()
 
-        if is_reminder_day(start):
-            send_event(bot, event)
+        # 🔹 EINZELTERMIN
+        if "start_date" in event:
+            event_date = parse_date(event["start_date"])
+
+            if is_reminder_day(event_date):
+                send_event(bot, event, event_date)
+
+        # 🔹 SERIENTERMIN
+        elif "recurring" in event:
+            recurring = event["recurring"]
+
+            start = parse_date(recurring["start"])
+            end = parse_date(recurring["end"])
+            rule = recurring["rule"]
+
+            current = start
+            while current <= end:
+
+                if rule == "first_sunday" and current.weekday() == 6 and current.day <= 7:
+                    if is_reminder_day(current):
+                        send_event(bot, event, current)
+
+                if rule == "third_saturday" and current.weekday() == 5 and 15 <= current.day <= 21:
+                    if is_reminder_day(current):
+                        send_event(bot, event, current)
+
+                current += timedelta(days=1)
+
+        else:
+            print(f"⚠️ Ungültiges Event übersprungen: {event}")
 
 
 if __name__ == "__main__":
