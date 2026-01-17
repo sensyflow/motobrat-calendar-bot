@@ -4,7 +4,7 @@ from datetime import datetime, timedelta, date
 from telegram import Bot
 
 BOT_TOKEN = os.getenv("BOT_TOKEN")
-CHANNEL_USERNAME = "@motobrat_news"
+CHANNEL_USERNAME = os.getenv("CHANNEL_USERNAME", "@Motobrat_news")
 EVENTS_FILE = "events_2026.json"
 REMINDER_DAYS = 5
 
@@ -93,3 +93,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
