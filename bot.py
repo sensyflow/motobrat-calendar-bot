@@ -3,7 +3,13 @@ import datetime
 from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
 
-BOT_TOKEN = "DEIN_BOT_TOKEN"
+import os
+
+BOT_TOKEN = os.getenv("BOT_TOKEN")
+
+if not BOT_TOKEN:
+    raise RuntimeError("BOT_TOKEN ist nicht gesetzt")
+
 EVENTS_FILE = "events/events_2026.json"
 
 
@@ -84,3 +90,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
