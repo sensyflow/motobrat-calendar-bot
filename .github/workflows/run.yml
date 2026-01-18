@@ -1,22 +1,20 @@
-name: Run Telegram Calendar Bot
+name: Telegram Test Bot
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: "0 8 * * *"   # täglich 08:00 UTC
 
 jobs:
-  run-bot:
+  run:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repo
+      - name: Checkout Repo
         uses: actions/checkout@v4
 
-      - name: Set up Python
+      - name: Setup Python
         uses: actions/setup-python@v5
         with:
-          python-version: "3.11"
+          python-version: '3.11'
 
       - name: Install dependencies
         run: |
@@ -24,9 +22,7 @@ jobs:
 
       - name: Run bot
         env:
-          BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
-          CHANNEL_USERNAME: "@motobrat_test"
-          TEST_MODE: false
-
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: |
           python bot.py
