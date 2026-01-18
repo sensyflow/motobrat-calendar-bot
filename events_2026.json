@@ -1,20 +1,20 @@
 [
   {
-    "start_date": "2026-01-23",
+    "start_date": "2026-01-20",
     "title": "Go Kart Rennen",
     "type": "event",
     "description": "Go Kart Rennen MOTOBRAT MC",
     "location": "Neckartal 202, 78628 Rottweil"
   },
   {
-    "date": "2026-02-21",
+    "start_date": "2026-01-21",
     "title": "Kvartirnik mit RED MAGMA",
     "type": "event",
     "description": "Kvartirnik mit RED MAGMA",
     "location": "Clubhaus MOTOBRAT MC"
   },
   {
-    "date": "2026-04-18",
+    "start_date": "2026-01-22",
     "title": "Saisoneröffnungsparty",
     "type": "event",
     "description": "Saisoneröffnungsparty MOTOBRAT MC",
@@ -29,7 +29,7 @@
     "location": "Alpen"
   },
   {
-    "date": "2026-10-17",
+    "start_date": "2026-01-23",
     "title": "Saisonabschlussparty",
     "type": "event",
     "description": "Saisonabschlussparty MOTOBRAT MC",
@@ -182,6 +182,7 @@
     "image": "images/clubabend.jpg"
   }
 ]
+
 
 
 
